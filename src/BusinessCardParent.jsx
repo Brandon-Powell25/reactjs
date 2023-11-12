@@ -29,8 +29,8 @@ export default class BusinessCardParent extends Component {
        //     name: newStateValue
        // })
 
-       this.state({
-        [stateKeyId]: newStateValue
+       this.setState({
+            [stateKeyId]: newStateValue
        })
 
        // updateState("name", "some new name");
