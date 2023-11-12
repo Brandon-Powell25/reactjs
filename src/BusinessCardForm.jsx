@@ -15,7 +15,7 @@ export default class BusinessCardForm extends Component {
         // pass in the form input data
         // call the parent setState function
 
-        this.props.setParentState(event.target.name, event.target.value)
+        this.props.setParentState(event.target.name, event.target.value);
     }
 
     render(){
@@ -27,6 +27,20 @@ export default class BusinessCardForm extends Component {
                 value={this.props.name} 
                 onChange={this.handleChangeInput}
                 />
+
+                <br />
+
+                <label htmlFor="email">Email Address:</label>
+                <input 
+                    type="text"
+                    name="email"
+                    id="emailInput"
+                    value={this.props.email} 
+                    onChange={this.handleChangeInput}               
+                
+                />
+
+
             </form>
         )
     }
